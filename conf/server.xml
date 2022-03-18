@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Server shows in current situation exist unique server   -->
+<Server>
+    <!--Service represents a group of components that provide services,process request and response-->
+    <Service name="Catalina">
+
+        <!--Connector represents components that interact between client and server, provides Engine with
+        unified service, and separates function of Engine from various protocol,HTTP;HTTPS;AJP and so on..-->
+        <Connector port="80"/>
+        <Connector port="8090"/>
+        <Connector port="9090"/>
+        <!--Engine represents environment for servlet to run, which duty is to further submit request sent
+        by Connector to Host handle-->
+        <Engine name="Catalina" defaultHost="localhost">
+            <!--Host,which is in charge of Context , represents virtual host-->
+            <Host name="localhost"  appBase="webapps">
+                <!--Context represents a application and provide servlet with concrete environment-->
+                <Context path="/app1" docBase ="E:\application\app1"/>
+                <Context path="/app2" docBase="E:\application\servlet"/>
+                <Context path="/app3" docBase="F:\JAVA\idea_project\Test\out\artifacts\Test_war_exploded"/>
+            </Host>
+        </Engine>
+    </Service>
+</Server>

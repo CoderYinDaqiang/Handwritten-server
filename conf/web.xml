@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<web-app>
+    <!-- ==================== Default Welcome File List ===================== -->
+    <!-- When a request URI refers to a directory, the default servlet looks  -->
+    <!-- for a "welcome file" within that directory and, if present, to the   -->
+    <!-- corresponding resource URI for display.                              -->
+    <!-- If no welcome files are present, the default servlet either serves a -->
+    <!-- directory listing (see default servlet configuration on how to       -->
+    <!-- customize) or returns a 404 status, depending on the value of the    -->
+    <!-- listings setting.                                                    -->
+    <!--                                                                      -->
+    <!-- If you define welcome files in your own application's web.xml        -->
+    <!-- deployment descriptor, that list *replaces* the list configured      -->
+    <!-- here, so be sure to include any of the default values that you wish  -->
+    <!-- to use within your application.                                       -->
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ==================== Default Session Configuration ================= -->
+    <!-- You can set the default session timeout (in minutes) for all newly   -->
+    <!-- created sessions by modifying the value below.                       -->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- ===================== Default MIME Type Mappings =================== -->
+    <!-- When serving static resources, Tomcat will automatically generate    -->
+    <!-- a "Content-Type" header based on the resource's filename extension,  -->
+    <!-- based on these mappings.  Additional mappings can be added here (to  -->
+    <!-- apply to all web applications), or in your own application's web.xml -->
+    <!-- deployment descriptor.                                               -->
+    <!-- Note: Extensions are always matched in a case-insensitive manner.    -->
+
+    <mime-mapping>
+        <extension>jpg</extension>
+        <mime-type>image/jpeg</mime-type>
+    </mime-mapping>
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+    <mime-mapping>
+        <extension>mp4</extension>
+        <mime-type>video/mp4</mime-type>
+    </mime-mapping>
+
+
+</web-app>
+
+
