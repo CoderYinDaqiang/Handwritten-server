@@ -1,5 +1,9 @@
 Basic knowledge:JAVASE,JAVAEE,COLLECTION,HTTP传输协议(报文格式，协议)
+
+
 类Tomcat服务器
+
+
 1.实现一个简易版的服务器，随后将请求报文封装到request对象中（通过inputStream），其次生成一个response对象，
   封装一些响应信息，如响应体，响应头。最后通过response.responde()（通过outputStream）生成响应报文发送给
   游览器。
